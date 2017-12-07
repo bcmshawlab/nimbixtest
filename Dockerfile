@@ -10,8 +10,8 @@ RUN ln -s /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery /usr/bin
 
 # RUN wget https://github.com/RWilton/Arioc/archive/v1.21.tar.gz
 RUN wget https://github.com/RWilton/Arioc/releases/download/v1.21/Arioc.x.121.zip
-RUN unzip -xvzf Arioc.x.121.zip
-RUN cd src && make
+# RUN unzip -xvzf Arioc.x.121.zip
+# RUN cd src && make
 
 
 # ADD ./NAE/help.html /etc/NAE/help.html
