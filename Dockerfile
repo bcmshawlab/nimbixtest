@@ -1,7 +1,7 @@
 FROM nvidia/cuda:7.5-runtime-ubuntu14.04
 
 ADD /helloWorld /usr/bin/
-RUN apt-get update && apt-get -y --force-yes install cuda-samples-7.5 make g++ cuda && apt-get clean && apt-get -y --force-yes install make 
+RUN apt-get update && apt-get -y --force-yes install cuda-samples-7.5 make g++ cuda && apt-get clean 
 
 RUN make -C /usr/local/cuda/samples/1_Utilities/deviceQuery
 RUN ln -s /usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery /usr/bin
