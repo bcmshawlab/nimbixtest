@@ -1,6 +1,9 @@
 FROM nvidia/cuda:7.5-runtime-ubuntu14.04
 
 ADD /helloWorld /usr/bin/
+ADD /STAR /usr/bin/
+ADD /STARlong /usr/bin/
+
 RUN apt-get update && apt-get -y --force-yes install curl wget cuda-samples-7.5 make g++ && apt-get clean 
 
 # apt-get -y --force-yes install cuda
