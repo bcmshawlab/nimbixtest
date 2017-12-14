@@ -6,6 +6,9 @@ ADD /STARlong /usr/bin/
 
 RUN apt-get update && apt-get -y --force-yes install curl wget cuda-samples-7.5 make g++ && apt-get clean 
 
+RUN chmod 777 /usr/bin/STAR
+RUN chmod 777 /usr/bin/STARlong
+
 # apt-get -y --force-yes install cuda
 
 RUN make -C /usr/local/cuda/samples/1_Utilities/deviceQuery
